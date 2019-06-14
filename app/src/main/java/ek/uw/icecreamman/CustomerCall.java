@@ -165,7 +165,7 @@ public class CustomerCall extends AppCompatActivity {
                     "transit_routing_preference=less_driving&" +
                     "origin=" + Common.mLastLocation.getLatitude() + "," + Common.mLastLocation.getLongitude() + "&" +
                     "destination=" + lat + "," + lng + "&" +
-                    "key=" + getResources().getString(R.string.google_directions_key);
+                    "key=" + getResources().getString(R.string.mapsAPIkey);
             Log.d(TAG, "Request Api: " + requestApi);
             mService.getPath(requestApi)
                     .enqueue(new Callback<String>() {

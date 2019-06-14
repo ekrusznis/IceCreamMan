@@ -453,7 +453,7 @@ public class RiderMap extends AppCompatActivity
                                 .flat(true)
                                 .title(driver.getName())
                                 .snippet(driver.getPhone())
-                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_car)));
+                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_truck)));
 
                     }
 

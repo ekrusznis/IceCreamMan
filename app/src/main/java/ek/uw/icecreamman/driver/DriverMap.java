@@ -292,7 +292,7 @@ public class DriverMap extends FragmentActivity implements OnMapReadyCallback,
                     "transit_routing_preference=less_driving&" +
                     "origin=" + currentPosition.latitude + "," + currentPosition.longitude + "&" +
                     "destination=" + destination + "&" +
-                    "key=" + getResources().getString(R.string.google_directions_key);
+                    "key=" + getResources().getString(R.string.mapsAPIkey);
             Log.d(TAG, "Request Api: " + requestApi);
             mService.getPath(requestApi)
                     .enqueue(new Callback<String>() {
@@ -360,7 +360,7 @@ public class DriverMap extends FragmentActivity implements OnMapReadyCallback,
 //
                                         carMarker = mMap.addMarker(new MarkerOptions().position(currentPosition)
                                                 .flat(true)
-                                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_car)));
+                                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_truck)));
 
                                         handler = new Handler();
 

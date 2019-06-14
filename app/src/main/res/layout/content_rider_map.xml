@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.labs.buttercell.forth.RiderMap"
+    tools:context="ek.uw.icecreamman.RiderMap"
     tools:showIn="@layout/app_bar_rider_map">
 
     <fragment
@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/layout_panel"
         android:layout_above="@+id/card1"
-        tools:context="com.labs.buttercell.forth.driver.DriverMap" />
+        tools:context="ek.uw.icecreamman.driver.DriverMap" />
 
 
         <android.support.v7.widget.CardView
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/btnPickupRequest"
                     android:layout_below="@id/imgExpandable"
-                    android:text="Pickup request"
+                    android:text="Ice Cream Request"
                     android:textColor="@color/colorWhite"
                     android:background="@drawable/btn_sign_in_background"
                     android:layout_margin="10dp"
