@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "591321170182",
+    "firebase_url": "https://icecreamman-9a697.firebaseio.com",
+    "project_id": "icecreamman-9a697",
+    "storage_bucket": "icecreamman-9a697.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591321170182:android:79e4d4f631a901fc",
+        "android_client_info": {
+          "package_name": "ek.uw.icecreamman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591321170182-07672dhng83ons0fvovv53cgue41ilmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1UVlB78qpfvIUUNN3UzDRE4LsVPizWl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591321170182-07672dhng83ons0fvovv53cgue41ilmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
