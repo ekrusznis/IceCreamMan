@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -37,7 +38,6 @@ public class RiderMainActivity extends AppCompatActivity {
     Button btnSignIn, btnRegister;
     RelativeLayout rootLayout;
     private TextView txtRider;
-
     FirebaseAuth mAuth;
     DatabaseReference users;
 
@@ -49,6 +49,7 @@ public class RiderMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        FirebaseApp.initializeApp(this);
         super.onCreate(savedInstanceState);
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/Overlock-Regular.ttf")
@@ -275,9 +276,7 @@ public class RiderMainActivity extends AppCompatActivity {
     private void initViews() {
         btnRegister = findViewById(R.id.btnRegister);
         btnSignIn = findViewById(R.id.btnSignIn);
-
         txtRider = findViewById(R.id.txt_rider_app2);
-
         mAuth = FirebaseAuth.getInstance();
         users = FirebaseDatabase.getInstance().getReference("Riders");
         rootLayout = findViewById(R.id.rootLayout);

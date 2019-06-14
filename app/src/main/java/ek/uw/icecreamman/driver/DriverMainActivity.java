@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -247,6 +248,7 @@ public class DriverMainActivity extends AppCompatActivity {
                                             public void onFailure(@NonNull Exception e) {
                                                 waitingDialog.dismiss();
                                                 Snackbar.make(rootLayout, "Failed " + e.getLocalizedMessage(), Snackbar.LENGTH_SHORT).show();
+                                                Log.i("Register Failure:", e.getLocalizedMessage());
                                             }
                                         });
 
@@ -257,6 +259,7 @@ public class DriverMainActivity extends AppCompatActivity {
                             public void onFailure(@NonNull Exception e) {
                                 waitingDialog.dismiss();
                                 Snackbar.make(rootLayout, "Failed " + e.getLocalizedMessage(), Snackbar.LENGTH_SHORT).show();
+                                Log.i("Register Failure:", e.getLocalizedMessage());
 
                             }
                         });
@@ -287,6 +290,7 @@ public class DriverMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DriverMainActivity.this, RiderMainActivity.class));
+
             }
         });
     }
